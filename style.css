@@ -1,0 +1,13 @@
+.js-img_gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.js-img-list {
+  padding-right: 30px;
+}
+img {
+  width: 350px;
+  height: 350px;
+}
