@@ -1,3 +1,11 @@
+#categories {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.item {
+  margin-right: 50px;
+}
 .js-img_gallery {
   display: flex;
   align-items: center;
@@ -10,4 +18,20 @@
 img {
   width: 350px;
   height: 350px;
+}
+#counter {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#validation-input {
+  border: 3px solid #bdbdbd;
+  margin-top: 30px;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }
