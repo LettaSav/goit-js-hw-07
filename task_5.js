@@ -1,5 +1,10 @@
 const inputRef = document.querySelector("#name-input");
-const messageNameLabel = document.querySelector("#name-output");
-inputRef.addEventListener("input", (event) => {
-  messageNameLabel.textContent = event.target.value;
-});
+let messageNameLabel = document.querySelector("#name-output");
+function inputDefinder() {
+  if (inputRef.value === "") {
+    messageNameLabel.innerHTML = "Незнакомец";
+  } else {
+    messageNameLabel.innerHTML = inputRef.value;
+  }
+}
+inputRef.addEventListener("input", inputDefinder);
